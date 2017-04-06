@@ -27,6 +27,9 @@ Use `make` on Linux, other systems, run these commands in exactly this order:
     pdflatex main.tex
     pdflatex main.tex
 
+If the output looks messed up after working on it for a while, it may be a good
+idea to clean out all temporary files from time to time with `git clean -fdx`.
+
 License
 =======
 

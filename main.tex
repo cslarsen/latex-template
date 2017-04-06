@@ -1,5 +1,5 @@
 \documentclass[a4paper,norsk,12pt]{report}
-\include{annet/preamble}
+\include{preamble}
 
 \begin{document}
   \author{Your Name}
@@ -7,10 +7,10 @@
   \title{Your Title \\
     {\Huge{\sffamily *** DRAFT ***}}}
 
-  \includepdf[pages={1}]{front-page.pdf}
+  %\includepdf[pages={1}]{front-page.pdf}
 
   \begin{abstract}
-    \input{abstract-filename-without-extension}
+      \input{abstract}
   \end{abstract}
 
   \tableofcontents
@@ -34,7 +34,7 @@
   \endgroup % left-justify
 
   \appendix
-  \input{your-appendix-filename}
+  \input{appendix}
 
   % Because of hyperref/makeidx/toc bug, we have to insert anchors
   % ourselves here.  See

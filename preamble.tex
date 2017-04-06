@@ -1,0 +1,48 @@
+% This file contains global settings to your LaTeX project. Here's where you
+% define language, style and so on.
+
+\usepackage[norsk]{babel} % for Norwegian stuff
+\usepackage[utf8]{inputenc} % use UTF-8 input files
+
+% Latin1 Times Roman font, which looks great for Norwegian, but may not be
+% suitable for other languages.
+\usepackage{times}
+\usepackage[T1]{fontenc}
+
+\usepackage{parskip} % newlines instead of paragraph indentation
+\usepackage[nottoc]{tocbibind} % biblio in ToC
+\usepackage[hidelinks]{hyperref} % clickable links
+\usepackage{apacite} % APA-style bibliography
+\usepackage{pdfpages} % to include PDF files
+
+% Fixes accidentally hitting alt+shift+space on OSX. If you're not on a mac,
+% drop this if you want to.
+\DeclareUnicodeCharacter{00A0}{ }
+
+% 1.5 line spacing. Sometimes this is required.
+%\usepackage{setspace}
+%\onehalfspacing
+
+% Build index, using the new imakeidx in TeX Live, see
+% http://tex.blogoverflow.com/2012/09/dont-forget-to-run-makeindex/
+\usepackage{imakeidx}
+\makeindex
+
+% Allow to reference things above/below (convenience package).
+%\usepackage{varioref}
+
+% Removes "Chapter" in the chapter titles.
+%\usepackage{titlesec}
+%\titleformat{\chapter}[display]
+  %{\normalfont\bfseries}{}{0pt}{\Huge}
+
+% Add other packages here
+%\usepackage{tabularx}
+%\usepackage{graphicx}
+%\usepackage{pdflscape}
+%\usepackage{booktabs}
+%\usepackage{ltablex}
+
+% Show fourth level chapters (subsubsection) in table of contents.
+%\setcounter{tocdepth}{4}
+%\setcounter{secnumdepth}{4}

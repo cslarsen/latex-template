@@ -1,0 +1,16 @@
+*.aux
+*.bbl
+*.blg
+*.idx
+*.ilg
+*.ind
+*.log
+*.lot
+*.out
+*.pdf
+*.toc
+.DS_Store
+GPATH
+GRTAGS
+GTAGS
+antallord.tex

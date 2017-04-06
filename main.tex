@@ -1,0 +1,48 @@
+\documentclass[a4paper,norsk,12pt]{report}
+\include{annet/preamble}
+
+\begin{document}
+  \author{Your Name}
+  \date{01.01.2038}
+  \title{Your Title \\
+    {\Huge{\sffamily *** DRAFT ***}}}
+
+  \includepdf[pages={1}]{front-page.pdf}
+
+  \begin{abstract}
+    \input{abstract-filename-without-extension}
+  \end{abstract}
+
+  \tableofcontents
+  \addtocontents{toc}{\protect\thispagestyle{empty}}
+  \pagenumbering{gobble}% Remove page numbers (and reset to 1)
+
+  \clearpage % OPTIONAL
+  \pagenumbering{arabic} % OPTIONAL
+
+  \phantomsection % add hyperref anchor
+  \input{file-1}
+  % ... add more files here
+  \clearpage
+
+  \begingroup % left-justify
+  \raggedright % left-justify
+  \nocite{*} % show all refs
+  \phantomsection
+  \bibliography{references-filename}
+  \bibliographystyle{apacite} % APA-style citations
+  \endgroup % left-justify
+
+  \appendix
+  \input{your-appendix-filename}
+
+  % Because of hyperref/makeidx/toc bug, we have to insert anchors
+  % ourselves here.  See
+  % http://tex.stackexchange.com/questions/138903/wrong-hyperref-for-index-in-tableofcontents-since-texlive-2010
+  %
+  \clearpage % may not be needed with imakeidx
+  \phantomsection % may not be needed with imakeidx
+  % Also add to ToC
+  \addcontentsline{toc}{chapter}{Index}
+  \printindex
+\end{document}

@@ -11,7 +11,7 @@ else
 endif
 
 all:
-	$(PDFLATEX) $(MAIN).tex
-	$(BIBTEX) $(MAIN)
-	$(PDFLATEX) $(MAIN).tex
-	$(PDFLATEX) $(MAIN).tex
+	$(PDFLATEX) main.tex
+	$(BIBTEX) main # NOTE: No extension
+	$(PDFLATEX) main.tex
+	$(PDFLATEX) main.tex

@@ -11,7 +11,6 @@
 
 \usepackage{parskip} % Newlines instead of paragraph indentation
 \usepackage[nottoc]{tocbibind} % Show bibliography in table of contents
-\usepackage[hidelinks]{hyperref} % Clickable links
 %\usepackage{apacite} % APA-style bibliography
 \usepackage{pdfpages} % to include PDF files
 
@@ -26,6 +25,8 @@
 % Build index, using the new imakeidx in TeX Live, see
 % http://tex.blogoverflow.com/2012/09/dont-forget-to-run-makeindex/
 \usepackage{imakeidx}
+\usepackage[hidelinks]{hyperref} % Clickable links; place after imakeidx for
+                                 % clickable index
 \makeindex
 
 % Allow to reference things above/below (convenience package).

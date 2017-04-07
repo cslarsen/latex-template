@@ -27,13 +27,20 @@
   % ... add more files here
   \clearpage
 
-  \begingroup % left-justify
-  \raggedright % left-justify
-  \nocite{*} % show all refs
-  \phantomsection
+  % Bibliography in APA-style with customizations:
+  %
+  %\begingroup % left-justify
+  %\raggedright % left-justify
+  %\nocite{*} % show all references, even if not used
+  %\phantomsection
+  %\bibliography{references}
+  %\bibliographystyle{apacite} % APA-style citations
+  %\endgroup % left-justify
+  %
+  % ... or another one:
+  %
   \bibliography{references}
-  \bibliographystyle{apacite} % APA-style citations
-  \endgroup % left-justify
+  \bibliographystyle{ieeetr} % another style
 
   \appendix
   \input{appendix}

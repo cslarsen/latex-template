@@ -11,7 +11,7 @@ else
 endif
 
 all:
-	$(PDFLATEX) main.tex
+	$(PDFLATEX) -halt-on-error main.tex
 	$(BIBTEX) main # NOTE: No extension
-	$(PDFLATEX) main.tex
-	$(PDFLATEX) main.tex
+	$(PDFLATEX) -halt-on-error main.tex
+	$(PDFLATEX) -halt-on-error main.tex

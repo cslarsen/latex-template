@@ -17,15 +17,6 @@ and in `preamble.tex`
 
 For Norwegian, you should replace `english` with `norsk`.
 
-Citation style
---------------
-
-It's currently set to APA. Change in `preamble.tex`:
-
-    \usepackage{apacite} % APA-style bibliography
-
-I.e., either remove that line, or use another package.
-
 How to build
 ============
 

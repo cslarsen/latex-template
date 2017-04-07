@@ -15,3 +15,6 @@ all:
 	$(BIBTEX) main # NOTE: No extension
 	$(PDFLATEX) -halt-on-error main.tex
 	$(PDFLATEX) -halt-on-error main.tex
+
+clean:
+	rm -f main.pdf

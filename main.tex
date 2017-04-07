@@ -2,12 +2,14 @@
 \include{preamble}
 
 \begin{document}
-  \author{Your Name}
+  \author{John Smith}
   \date{01.01.2038}
-  \title{Your Title \\
-    {\Huge{\sffamily *** DRAFT ***}}}
+  \title{An Example \LaTeX{} Report}
 
-  %\includepdf[pages={1}]{front-page.pdf}
+  % If you want a frontpage, you can do this:
+  %   \includepdf[pages={1}]{front-page.pdf}
+  % Here, instead, we use \maketitle
+  \maketitle
 
   \begin{abstract}
       \input{abstract}
@@ -21,7 +23,7 @@
   \pagenumbering{arabic} % OPTIONAL
 
   \phantomsection % add hyperref anchor
-  \input{file-1}
+  \input{chapter-example} % no file extension
   % ... add more files here
   \clearpage
 

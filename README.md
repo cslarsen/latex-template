@@ -7,15 +7,24 @@ institution's style guides!
 Language
 --------
 
-It's tailored for Norwegian language. To change this, search for `norsk` and
-change to your language. Also, you may want to change the font as well in
-`preamble.tex`.
+Set to `english`. Change in `main.txt`
+
+    \documentclass[a4paper,english,12pt]{report}
+
+and in `preamble.tex`
+
+    \usepackage[english]{babel}
+
+For Norwegian, you should replace `english` with `norsk`.
 
 Citation style
 --------------
 
-It's currently set to APA. Remember to change this as well.
+It's currently set to APA. Change in `preamble.tex`:
 
+    \usepackage{apacite} % APA-style bibliography
+
+I.e., either remove that line, or use another package.
 
 How to build
 ============
@@ -23,7 +32,7 @@ How to build
 Use `make` on Linux, other systems, run these commands in exactly this order:
 
     pdflatex main.tex
-    bibtex main        # NOTE: No file extension
+    bibtex main # NOTE: No file extension
     pdflatex main.tex
     pdflatex main.tex
 
